@@ -1,0 +1,13 @@
+ID,Case,Inputs,Expected Output,Actual Output,Result
+1,ALL_SAFE,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.005}",low,low,Pass
+2,TEMP_MOD,"{""temp_c"": 22.5, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.005}",medium,medium,Pass
+3,SAL_MOD,"{""temp_c"": 26.0, ""sal_psu"": 29.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.005}",medium,medium,Pass
+4,DO_MOD,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 5.0, ""nh3_mgL"": 0.005}",medium,medium,Pass
+5,NH3_MOD,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.03}",medium,medium,Pass
+6,TEMP_HIGH,"{""temp_c"": 20.0, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.005}",high,high,Pass
+7,SAL_HIGH,"{""temp_c"": 26.0, ""sal_psu"": 27.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.005}",high,high,Pass
+8,DO_HIGH,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 3.0, ""nh3_mgL"": 0.005}",high,high,Pass
+9,NH3_HIGH,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.06}",high,high,Pass
+10,HYPOXIA_EMERGENCY,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 1.5, ""nh3_mgL"": 0.0}",high,high,Pass
+11,MIXED_HIGH_DOM,"{""temp_c"": 23.0, ""sal_psu"": 29.5, ""do_mgL"": 3.5, ""nh3_mgL"": 0.01}",high,high,Pass
+12,MULTI_MODERATES,"{""temp_c"": 23.5, ""sal_psu"": 36.0, ""do_mgL"": 5.5, ""nh3_mgL"": 0.01}",medium,medium,Pass

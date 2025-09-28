@@ -1,0 +1,25 @@
+ID,Case,Inputs,Expected Output,Actual Output,Result
+1,TEMP_SAFE_LO,"{""temp_c"": 24.0, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",low,low,Pass
+2,TEMP_BELOW_SAFE,"{""temp_c"": 23.99, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",medium,medium,Pass
+3,TEMP_SAFE_HI,"{""temp_c"": 28.0, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",low,low,Pass
+4,TEMP_ABOVE_SAFE,"{""temp_c"": 28.01, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",medium,medium,Pass
+5,TEMP_LOW_HIGH,"{""temp_c"": 21.9, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",high,high,Pass
+6,TEMP_HIGH_HIGH,"{""temp_c"": 30.1, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",high,high,Pass
+7,SAL_SAFE_LO,"{""temp_c"": 26, ""sal_psu"": 30.0, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",low,low,Pass
+8,SAL_BELOW_SAFE,"{""temp_c"": 26, ""sal_psu"": 29.99, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",medium,medium,Pass
+9,SAL_SAFE_HI,"{""temp_c"": 26, ""sal_psu"": 35.0, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",low,low,Pass
+10,SAL_ABOVE_SAFE,"{""temp_c"": 26, ""sal_psu"": 35.01, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",medium,medium,Pass
+11,SAL_LOW_HIGH,"{""temp_c"": 26, ""sal_psu"": 27.9, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",high,high,Pass
+12,SAL_HIGH_HIGH,"{""temp_c"": 26, ""sal_psu"": 37.1, ""do_mgL"": 7, ""nh3_mgL"": 0.0}",high,high,Pass
+13,DO_SAFE,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 6.0, ""nh3_mgL"": 0.0}",low,low,Pass
+14,DO_MOD_BELOW_SAFE,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 5.99, ""nh3_mgL"": 0.0}",medium,medium,Pass
+15,DO_MOD_EDGE,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 4.0, ""nh3_mgL"": 0.0}",medium,medium,Pass
+16,DO_HIGH,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 3.99, ""nh3_mgL"": 0.0}",high,high,Pass
+17,DO_EMERGENCY,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 1.99, ""nh3_mgL"": 0.0}",high,high,Pass
+18,NH3_SAFE,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.02}",low,low,Pass
+19,NH3_MOD_BELOW_HIGH,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.02001}",medium,medium,Pass
+20,NH3_MOD_EDGE,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.05}",medium,medium,Pass
+21,NH3_HIGH,"{""temp_c"": 26, ""sal_psu"": 32, ""do_mgL"": 7, ""nh3_mgL"": 0.05001}",high,high,Pass
+22,AGGR_HIGH_DOM,"{""temp_c"": 23.0, ""sal_psu"": 29.0, ""do_mgL"": 3.9, ""nh3_mgL"": 0.04}",high,high,Pass
+23,AGGR_ANY_MOD,"{""temp_c"": 23.0, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.0}",medium,medium,Pass
+24,AGGR_ALL_SAFE,"{""temp_c"": 26.0, ""sal_psu"": 32.0, ""do_mgL"": 7.0, ""nh3_mgL"": 0.0}",low,low,Pass
